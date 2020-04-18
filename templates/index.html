@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+    <form enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+        {{ form.as_table }}
+        <!-- dont remove datalist or change its id -->
+        <datalist id="mylist">
+        </datalist>
+        <button class="btn btn-primary" type="submit">OK</button>
+    {{ res }}
+    </form>
+    {{ form.media }}
+{% endblock maincontent %}
+{% block myscripts %}
+
+{% endblock myscripts %}

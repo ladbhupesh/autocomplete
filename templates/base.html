@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>{% block title %}Base{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+<body>
+    <div class="limiter">
+        {% block topnavigation %}
+
+        {% endblock topnavigation %}
+        
+        {% block maincontent %}
+
+        {% endblock maincontent %}
+    </div>
+
+    {% block myscripts %}
+
+    {% endblock myscripts %}
+</body>
+
+</html>
